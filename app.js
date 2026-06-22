@@ -4,6 +4,10 @@
 ========================================================================
 */
 
+// Initialize Vercel Web Analytics
+import { inject } from '@vercel/analytics';
+inject();
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize Lucide Icons
     if (typeof lucide !== 'undefined') {
