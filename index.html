@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aetheris Institute of Technology (AIT) is a premier global research and education center pioneering Quantum Systems, Artificial Intelligence, and Advanced Engineering.">
+    <title>Aetheris Institute of Technology | Pioneering Future Sciences</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <span class="brand-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8b5cf6"/>
+                                <stop offset="1" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="brand-name">AETHERIS</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#admissions" class="nav-link">Admissions</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+                <a href="#admissions" class="btn btn-primary nav-cta">Apply Now</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Mobile Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="hero-badge">
+                            <span class="badge-dot"></span>
+                            QS World Ranking #12 (Emerging Sciences)
+                        </span>
+                    </div>
+                    <h1 class="hero-title">
+                        Shaping the <span class="text-gradient">Architects</span> of Tomorrow
+                    </h1>
+                    <p class="hero-subtitle">
+                        Aetheris Institute of Technology pioneers research and advanced education in quantum computing, cybernetic biology, and space logistics.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#academics" class="btn btn-primary">
+                            <span>Explore Programs</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <button class="btn btn-secondary" id="btnVirtualTour">
+                            <i data-lucide="play-circle"></i>
+                            <span>Virtual Tour</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-canvas-container">
+                        <!-- Floating Glass Cards illustrating technology concepts -->
+                        <div class="glass-visual-card card-1">
+                            <div class="card-icon"><i data-lucide="cpu" class="purple-icon"></i></div>
+                            <div class="card-text">
+                                <h4>Quantum Processing</h4>
+                                <p>Superposition & Gate Optimization</p>
+                            </div>
+                            <span class="card-pulse"></span>
+                        </div>
+                        <div class="glass-visual-card card-2">
+                            <div class="card-icon"><i data-lucide="dna" class="cyan-icon"></i></div>
+                            <div class="card-text">
+                                <h4>SynBio Systems</h4>
+                                <p>Biomimetic gene sequencing</p>
+                            </div>
+                            <span class="card-pulse"></span>
+                        </div>
+                        <div class="glass-visual-card card-3">
+                            <div class="card-icon"><i data-lucide="orbit" class="blue-icon"></i></div>
+                            <div class="card-text">
+                                <h4>Orbits & Propulsion</h4>
+                                <p>Dynamic vector satellite networks</p>
+                            </div>
+                            <span class="card-pulse"></span>
+                        </div>
+                        <div class="center-glow-sphere"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-stat-target="4500">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Active Scholars</p>
+                        <p class="stat-desc">Representing over 64 countries</p>
+                    </div>
+                    <div class="stat-card" data-stat-target="98">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num">0</span><span class="stat-suffix">%</span>
+                        </div>
+                        <p class="stat-label">Career Placement</p>
+                        <p class="stat-desc">Within 3 months of graduation</p>
+                    </div>
+                    <div class="stat-card" data-stat-target="58">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num">0</span><span class="stat-suffix">M+</span>
+                        </div>
+                        <p class="stat-label">Research Funding</p>
+                        <p class="stat-desc">Granted by global scientific councils</p>
+                    </div>
+                    <div class="stat-card" data-stat-target="140">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Scientific Patents</p>
+                        <p class="stat-desc">Filed in AI, Robotics & Biotech</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="academics-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Academic Programs</h2>
+                    <p class="section-subtitle">Our curricula blend foundational theory with advanced laboratories, preparing students for tomorrow's complex challenges.</p>
+                </div>
+
+                <!-- Course Finder Search and Filters -->
+                <div class="academics-filter-wrapper">
+                    <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="courseSearch" placeholder="Search programs (e.g. quantum, robotics)...">
+                    </div>
+                    <div class="filter-tabs" id="filterTabs">
+                        <button class="tab-btn active" data-filter="all">All Fields</button>
+                        <button class="tab-btn" data-filter="computing">Computing & AI</button>
+                        <button class="tab-btn" data-filter="quantum">Quantum & Space</button>
+                        <button class="tab-btn" data-filter="bio">Bio-Engineering</button>
+                    </div>
+                </div>
+
+                <!-- Academic Program Cards -->
+                <div class="program-grid" id="programGrid">
+                    <!-- Card 1 -->
+                    <div class="program-card" data-category="computing">
+                        <div class="card-tag tag-computing">Computing & AI</div>
+                        <h3 class="program-title">M.S. in Cognitive AI & Swarm Intelligence</h3>
+                        <p class="program-summary">Focus on creating distributed, self-learning networks of autonomous agents and deep cognitive interfaces.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 2 Years</span>
+                            <span><i data-lucide="book-open"></i> Full Time</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Deep Reinforcement Learning</li>
+                                    <li>Multi-Agent Coordination Models</li>
+                                    <li>Neuromorphic Architecture</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>Lead AI Researcher, Autonomous Systems Architect, Robotics Lead.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="program-card" data-category="quantum">
+                        <div class="card-tag tag-quantum">Quantum & Space</div>
+                        <h3 class="program-title">B.Tech in Quantum Information & Cryptography</h3>
+                        <p class="program-summary">Master the principles of superposition, entanglement, and quantum error correction to build secure hardware systems.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 4 Years</span>
+                            <span><i data-lucide="book-open"></i> Full Time</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Quantum Mechanics & Computing</li>
+                                    <li>Post-Quantum Cryptographic Protocols</li>
+                                    <li>Qubit Physical Architectures</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>Quantum Algorithm Designer, Security Analyst, R&D Engineer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="program-card" data-category="bio">
+                        <div class="card-tag tag-bio">Bio-Engineering</div>
+                        <h3 class="program-title">Ph.D. in Synthetic Biology & Molecular Design</h3>
+                        <p class="program-summary">An intensive research pathway for engineering living systems, programming cells, and synthesizing nano-carriers for therapy.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 3-4 Years</span>
+                            <span><i data-lucide="book-open"></i> Research-driven</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Biomolecular Circuit Design</li>
+                                    <li>CRISPR & Gene Assembly Tech</li>
+                                    <li>Bio-Informatics Data Engines</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>Principal Bio-Architect, Biotech Consultant, University Faculty.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="program-card" data-category="quantum">
+                        <div class="card-tag tag-quantum">Quantum & Space</div>
+                        <h3 class="program-title">M.Tech in Space Propulsion & Avionics</h3>
+                        <p class="program-summary">Explore satellite mesh telemetry, micro-thruster kinematics, and high-speed orbital flight systems.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 2 Years</span>
+                            <span><i data-lucide="book-open"></i> Full Time</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Relativistic Flight & Mechanics</li>
+                                    <li>Hall Effect Thruster Systems</li>
+                                    <li>Autonomous Satellite Navigation</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>Aerospace Controls Lead, Orbital Mechanics Specialist, Flight Systems Engineer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="program-card" data-category="computing">
+                        <div class="card-tag tag-computing">Computing & AI</div>
+                        <h3 class="program-title">B.Tech in Decentralized Systems & Edge Computing</h3>
+                        <p class="program-summary">Design resilient web networks, trustless zero-knowledge protocols, and localized compute grids for edge IoT device fleets.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 4 Years</span>
+                            <span><i data-lucide="book-open"></i> Full Time</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Zero-Knowledge Proof Implementations</li>
+                                    <li>Distributed Consensus Mechanisms</li>
+                                    <li>Low-latency Edge Compiling</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>Web3 Protocol Developer, Systems Engineer, Smart Contracts Audit Lead.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="program-card" data-category="bio">
+                        <div class="card-tag tag-bio">Bio-Engineering</div>
+                        <h3 class="program-title">M.S. in Neuro-Prosthetics & Cybernetics</h3>
+                        <p class="program-summary">Study brain-computer interfaces (BCIs), electro-mechanical limb feedback, and neuro-stimulation electronics.</p>
+                        <div class="program-meta">
+                            <span><i data-lucide="clock"></i> 2 Years</span>
+                            <span><i data-lucide="book-open"></i> Full Time</span>
+                        </div>
+                        <button class="btn-card-toggle">View Modules <i data-lucide="chevron-down"></i></button>
+                        <div class="program-details-expand">
+                            <div class="expand-content">
+                                <h5>Core Focus Areas:</h5>
+                                <ul>
+                                    <li>Neural Signal Processing & Filters</li>
+                                    <li>Biocompatible Electronic Materials</li>
+                                    <li>Haptic Actuation Design</li>
+                                </ul>
+                                <h5>Career Outcomes:</h5>
+                                <p>BCI Hardware Specialist, Cybernetics Designer, Neuro-technologist.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- No Results fallback -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i data-lucide="search-code"></i>
+                    <p>No academic programs match your criteria. Try another search keyword.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Frontiers -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Research Frontiers</h2>
+                    <p class="section-subtitle">We house 12 state-of-the-art research centers. Discover how our researchers are expanding the limits of human knowledge.</p>
+                </div>
+
+                <div class="research-grid">
+                    <!-- Research 1 -->
+                    <div class="research-card">
+                        <div class="research-icon-box">
+                            <i data-lucide="atom"></i>
+                        </div>
+                        <h3>Aetheris Quantum Computing Lab</h3>
+                        <p>Currently researching room-temperature superconductors and topologic quantum computing arrays to achieve fault-tolerant computing.</p>
+                        <div class="research-project-status">
+                            <span class="status-indicator live"></span>
+                            <span class="status-text">Active: Project Helios (120 Qubits)</span>
+                        </div>
+                    </div>
+
+                    <!-- Research 2 -->
+                    <div class="research-card">
+                        <div class="research-icon-box">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <h3>Robotics & Cognitive Autonomy Cell</h3>
+                        <p>Developing swarm intelligence modules for search and rescue operations, alongside soft-robotics models for deep ocean exploration.</p>
+                        <div class="research-project-status">
+                            <span class="status-indicator design"></span>
+                            <span class="status-text">Testing: Drone Swarm V3</span>
+                        </div>
+                    </div>
+
+                    <!-- Research 3 -->
+                    <div class="research-card">
+                        <div class="research-icon-box">
+                            <i data-lucide="dna"></i>
+                        </div>
+                        <h3>Genomic Modification Center</h3>
+                        <p>Pioneering in-vivo metabolic gene programming to reverse cellular aging, while developing biosensors to track air quality metrics in real-time.</p>
+                        <div class="research-project-status">
+                            <span class="status-indicator live"></span>
+                            <span class="status-text">Active: Project Bio-Shield</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Research Feed Carousel -->
+                <div class="recent-papers-section">
+                    <h4>Latest Publications</h4>
+                    <div class="papers-ticker-container">
+                        <div class="papers-ticker">
+                            <div class="paper-item">
+                                <span class="paper-journal">Nature Computing</span>
+                                <p class="paper-title">"Entanglement Coherence in Room-Temperature Topological Insulators" — Dr. H. Vance et al.</p>
+                            </div>
+                            <div class="paper-item">
+                                <span class="paper-journal">IEEE Robotics</span>
+                                <p class="paper-title">"Swarm Kinematics: Decentralized Collision Avoidance in Densely Packed Aerial Spaces" — Prof. Lin et al.</p>
+                            </div>
+                            <div class="paper-item">
+                                <span class="paper-journal">Science Bio</span>
+                                <p class="paper-title">"Synthetic Genetic Circuits for targeted enzymatic cancer cell lysis" — Dr. A. Patel et al.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Eligibility Estimator Widget -->
+        <section id="admissions" class="admissions-section">
+            <div class="container">
+                <div class="estimator-layout">
+                    <div class="estimator-text">
+                        <h2 class="section-title">Admissions Portal</h2>
+                        <p>Join a community of ambitious thinkers. Our selection is holistic, focusing on passion, project portfolios, and analytical foundation.</p>
+                        
+                        <div class="admissions-benefits">
+                            <div class="benefit-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <div>
+                                    <h5>Full Fellowships Available</h5>
+                                    <p>Fully funded Ph.D. positions and merit-based undergraduate fee waivers.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <div>
+                                    <h5>Global Partnerships</h5>
+                                    <p>Semester exchanges with MIT, ETH Zurich, and Tokyo Tech.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Eligibility Tool -->
+                    <div class="estimator-box glass-panel">
+                        <div class="estimator-header">
+                            <h4>Program Advisor Tool</h4>
+                            <p>Find your recommended path in 3 simple selections.</p>
+                        </div>
+                        
+                        <!-- Progress Steps -->
+                        <div class="stepper">
+                            <div class="step active" data-step="1">1</div>
+                            <div class="step-line"></div>
+                            <div class="step" data-step="2">2</div>
+                            <div class="step-line"></div>
+                            <div class="step" data-step="3">3</div>
+                        </div>
+
+                        <!-- Step Content 1 -->
+                        <div class="step-content active" id="step1">
+                            <label class="input-label">Select Your Main Scientific Interest:</label>
+                            <div class="interest-options">
+                                <div class="interest-card" data-interest="computing">
+                                    <i data-lucide="code-2"></i>
+                                    <span>AI & Coding</span>
+                                </div>
+                                <div class="interest-card" data-interest="quantum">
+                                    <i data-lucide="orbit"></i>
+                                    <span>Space & Quantum</span>
+                                </div>
+                                <div class="interest-card" data-interest="bio">
+                                    <i data-lucide="dna"></i>
+                                    <span>Bio-Tech</span>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="btn btn-primary btn-next" disabled>Next Step <i data-lucide="chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step Content 2 -->
+                        <div class="step-content" id="step2">
+                            <label class="input-label" for="cgpaSlider">Your Academic Score/CGPA: <span id="cgpaVal">8.5</span>/10</label>
+                            <div class="slider-container">
+                                <input type="range" id="cgpaSlider" min="5.0" max="10.0" step="0.1" value="8.5">
+                                <div class="slider-marks">
+                                    <span>5.0</span>
+                                    <span>7.5</span>
+                                    <span>10.0</span>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button class="btn btn-secondary btn-prev"><i data-lucide="chevron-left"></i> Back</button>
+                                <button class="btn btn-primary btn-next">Next Step <i data-lucide="chevron-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step Content 3 -->
+                        <div class="step-content" id="step3">
+                            <label class="input-label">Select Your Ultimate Career Goal:</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="research" checked>
+                                    <span class="radio-label">Scientific R&D / Academia (PhD)</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="goal" value="industry">
+                                    <span class="radio-label">Industry Specialist & Entrepreneur (Tech Giants/Startups)</span>
+                                </label>
+                            </div>
+                            <div class="step-actions">
+                                <button class="btn btn-secondary btn-prev"><i data-lucide="chevron-left"></i> Back</button>
+                                <button class="btn btn-primary" id="btnCalculate">Get Recommendation <i data-lucide="sparkles"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="step-content" id="stepResult">
+                            <div class="result-card-inner">
+                                <div class="result-badge"><i data-lucide="award"></i> Recommended Program</div>
+                                <h4 id="recommendedTitle">Loading recommendation...</h4>
+                                <p id="recommendedDesc">Loading description details...</p>
+                                
+                                <div class="eligibility-status">
+                                    <i data-lucide="info" class="status-info-icon"></i>
+                                    <span id="eligibilityText">Calculating...</span>
+                                </div>
+
+                                <div class="step-actions-result">
+                                    <button class="btn btn-secondary" id="btnResetEstimator">Recalculate</button>
+                                    <a href="#contact" class="btn btn-primary" id="btnApplyEstimator">Inquire About Program</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="contact-intro">Whether you are an aspiring scholar, research organization, or industry partner, we are excited to collaborate.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h5>Campus Location</h5>
+                                <p>100 Science Boulevard, Sector 12, Aetheris Smart City, ASC-94002</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h5>Inquiries</h5>
+                                <p>admissions@aetheris.edu | research@aetheris.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h5>Helpline</h5>
+                                <p>+1 (800) 901-AETH (Monday to Friday, 9am - 5pm EST)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="contact-form-container glass-panel">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Full Name</label>
+                                <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                                <span class="error-msg">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email Address</label>
+                                <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                                <span class="error-msg">Please enter a valid email address</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formSubject">Area of Interest</label>
+                            <select id="formSubject" name="subject" required>
+                                <option value="" disabled selected>Select an option...</option>
+                                <option value="Admissions Undergraduate">Admissions (Undergraduate)</option>
+                                <option value="Admissions Postgraduate">Admissions (Postgraduate/PhD)</option>
+                                <option value="Research Collaboration">Research Collaboration</option>
+                                <option value="General Queries">General Queries</option>
+                            </select>
+                            <span class="error-msg">Please select an area of interest</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5" placeholder="Tell us about your interests, project accomplishments, or query..." required></textarea>
+                            <span class="error-msg">Please enter your message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success State -->
+                    <div class="form-success-overlay" id="formSuccess">
+                        <div class="success-content">
+                            <div class="success-icon"><i data-lucide="check-circle"></i></div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. An academic coordinator will contact you at <strong id="sentEmail"></strong> within 24 hours.</p>
+                            <button class="btn btn-primary" id="btnSuccessClose">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="#" class="nav-brand">
+                    <span class="brand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#footer-logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="url(#footer-logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="url(#footer-logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="footer-logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#8b5cf6"/>
+                                    <stop offset="1" stop-color="#06b6d4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                    <span class="brand-name">AETHERIS</span>
+                </a>
+                <p class="footer-desc">Pioneering multi-disciplinary Research & Advanced Scientific Engineering.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="X / Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Github"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Academics</h4>
+                <ul>
+                    <li><a href="#academics">Computing & AI</a></li>
+                    <li><a href="#academics">Quantum Engineering</a></li>
+                    <li><a href="#academics">Aerospace & Systems</a></li>
+                    <li><a href="#academics">Biotech & Genetics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Admissions</h4>
+                <ul>
+                    <li><a href="#admissions">Eligibility Quiz</a></li>
+                    <li><a href="#admissions">Tuition & Funding</a></li>
+                    <li><a href="#admissions">Global Scholarships</a></li>
+                    <li><a href="#admissions">How to Apply</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-col">
+                <h4>Subscribe to Research Insights</h4>
+                <p>Get a monthly compilation of recent publications, open source science datasets, and event updates.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email..." required aria-label="Newsletter Email">
+                    <button type="submit" aria-label="Submit Newsletter Form"><i data-lucide="mail"></i></button>
+                </form>
+                <span class="newsletter-status" id="newsletterStatus">Subscribed successfully!</span>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Aetheris Institute of Technology. All rights reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security Registry</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Virtual Tour Video Modal -->
+    <div class="modal" id="tourModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container glass-panel">
+            <button class="modal-close" id="btnModalClose" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-body">
+                <h3>Aetheris Campus Tour</h3>
+                <p>Experience our state-of-the-art labs, dynamic classrooms, and robotic arenas.</p>
+                <div class="video-placeholder">
+                    <!-- High-tech mock simulation video using Canvas or SVG animations, or embedded video -->
+                    <div class="simulated-tour-video">
+                        <div class="video-overlay-ui">
+                            <span class="rec-dot"></span>
+                            <span class="rec-text">LIVE FEED: HOLOGRAPHIC AMPHITHEATER</span>
+                        </div>
+                        <div class="vector-hud">
+                            <!-- Visual design representation using pure SVG/CSS -->
+                            <div class="hud-circle"></div>
+                            <div class="hud-scanning-line"></div>
+                            <div class="hud-data-readout">
+                                <div>ALT: 24m</div>
+                                <div>LAB STATUS: ONLINE</div>
+                                <div>TEMP: 21.4°C</div>
+                            </div>
+                        </div>
+                        <div class="virtual-scenes-slider">
+                            <div class="virtual-scene scene-1 active">
+                                <img src="" alt="Aetheris Campus Quad" class="scene-img" id="sceneImg">
+                                <div class="scene-caption" id="sceneCaption">Quantum Computational Cluster (Central Hub)</div>
+                            </div>
+                        </div>
+                        <!-- Virtual Tour Scene Controllers -->
+                        <div class="tour-controls">
+                            <button class="tour-control-btn active" data-scene="1">Central Hub</button>
+                            <button class="tour-control-btn" data-scene="2">Nanotech Cleanroom</button>
+                            <button class="tour-control-btn" data-scene="3">Autonomous Flying Drone Bay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
