@@ -109,14 +109,40 @@
                             </div>
                             <span class="card-pulse"></span>
                         </div>
-                        <div class="glass-visual-card card-3">
-                            <div class="card-icon"><i data-lucide="orbit" class="blue-icon"></i></div>
-                            <div class="card-text">
-                                <h4>Orbits & Propulsion</h4>
-                                <p>Dynamic vector satellite networks</p>
-                            </div>
-                            <span class="card-pulse"></span>
-                        </div>
+                        <!-- Cybernetic Vector Constellation SVG Backdrop -->
+                        <svg class="hero-svg-backdrop" viewBox="0 0 400 400" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Orbits & Scanning Lines -->
+                            <circle cx="200" cy="200" r="170" stroke="var(--accent-primary)" stroke-width="0.75" stroke-opacity="0.1" />
+                            <circle cx="200" cy="200" r="140" stroke="var(--accent-cyan)" stroke-width="1" stroke-dasharray="8 12" stroke-opacity="0.25" class="rotator-cw" />
+                            <circle cx="200" cy="200" r="100" stroke="var(--accent-secondary)" stroke-width="1.5" stroke-dasharray="16 8" stroke-opacity="0.2" class="rotator-ccw" />
+                            <circle cx="200" cy="200" r="60" stroke="var(--accent-primary)" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.3" class="rotator-cw" />
+                            
+                            <!-- Constellation Network Connections -->
+                            <g class="constellation-nodes">
+                                <line x1="200" y1="200" x2="60" y2="120" stroke="var(--accent-secondary)" stroke-opacity="0.15" stroke-width="1" />
+                                <line x1="200" y1="200" x2="320" y2="100" stroke="var(--accent-cyan)" stroke-opacity="0.15" stroke-width="1" />
+                                <line x1="200" y1="200" x2="290" y2="300" stroke="var(--accent-primary)" stroke-opacity="0.15" stroke-width="1" />
+                                <line x1="200" y1="200" x2="110" y2="280" stroke="var(--accent-cyan)" stroke-opacity="0.15" stroke-width="1" />
+                                
+                                <line x1="60" y1="120" x2="110" y2="280" stroke="var(--accent-primary)" stroke-opacity="0.08" stroke-width="0.75" />
+                                <line x1="320" y1="100" x2="290" y2="300" stroke="var(--accent-secondary)" stroke-opacity="0.08" stroke-width="0.75" />
+                            </g>
+
+                            <!-- Constellation Points/Stars -->
+                            <g class="pulsating-stars">
+                                <circle cx="60" cy="120" r="5" fill="var(--accent-secondary)" class="star-pulse-1" />
+                                <circle cx="320" cy="100" r="4" fill="var(--accent-cyan)" class="star-pulse-2" />
+                                <circle cx="290" cy="300" r="6" fill="var(--accent-primary)" class="star-pulse-3" />
+                                <circle cx="110" cy="280" r="4.5" fill="var(--accent-cyan)" class="star-pulse-1" />
+                            </g>
+
+                            <defs>
+                                <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="var(--accent-primary)" stop-opacity="0.4" />
+                                    <stop offset="100%" stop-color="var(--accent-primary)" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
                         <div class="center-glow-sphere"></div>
                     </div>
                 </div>
@@ -124,7 +150,7 @@
         </section>
 
         <!-- Stats Section -->
-        <section class="stats-section">
+        <section class="stats-section reveal-on-scroll">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-card" data-stat-target="4500">
@@ -162,7 +188,7 @@
         <!-- Academics Section -->
         <section id="academics" class="academics-section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2 class="section-title">Academic Programs</h2>
                     <p class="section-subtitle">Our curricula blend foundational theory with advanced laboratories, preparing students for tomorrow's complex challenges.</p>
                 </div>
@@ -339,7 +365,7 @@
         <!-- Research Frontiers -->
         <section id="research" class="research-section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <h2 class="section-title">Research Frontiers</h2>
                     <p class="section-subtitle">We house 12 state-of-the-art research centers. Discover how our researchers are expanding the limits of human knowledge.</p>
                 </div>
@@ -412,7 +438,7 @@
         <section id="admissions" class="admissions-section">
             <div class="container">
                 <div class="estimator-layout">
-                    <div class="estimator-text">
+                    <div class="estimator-text reveal-on-scroll">
                         <h2 class="section-title">Admissions Portal</h2>
                         <p>Join a community of ambitious thinkers. Our selection is holistic, focusing on passion, project portfolios, and analytical foundation.</p>
                         
@@ -435,7 +461,7 @@
                     </div>
 
                     <!-- Interactive Eligibility Tool -->
-                    <div class="estimator-box glass-panel">
+                    <div class="estimator-box glass-panel reveal-on-scroll">
                         <div class="estimator-header">
                             <h4>Program Advisor Tool</h4>
                             <p>Find your recommended path in 3 simple selections.</p>
@@ -534,7 +560,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container contact-grid">
-                <div class="contact-info">
+                <div class="contact-info reveal-on-scroll">
                     <h2 class="section-title">Get in Touch</h2>
                     <p class="contact-intro">Whether you are an aspiring scholar, research organization, or industry partner, we are excited to collaborate.</p>
                     
@@ -564,7 +590,7 @@
                 </div>
 
                 <!-- Form Card -->
-                <div class="contact-form-container glass-panel">
+                <div class="contact-form-container glass-panel reveal-on-scroll">
                     <form id="contactForm" novalidate>
                         <div class="form-row">
                             <div class="form-group">

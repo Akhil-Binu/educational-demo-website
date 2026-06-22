@@ -578,4 +578,25 @@ document.addEventListener('DOMContentLoaded', () => {
             switchScene(sceneNum);
         });
     });
+
+    // 12. Scroll Reveal Animation Observer
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const revealObserverOptions = {
+        root: null,
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, revealObserverOptions);
+
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
 });
